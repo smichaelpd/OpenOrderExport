@@ -1,0 +1,12 @@
+name: Sample GitHub Action
+
+on: pull_request
+
+jobs:
+  ElJoboNumber1:
+    name: Job Number 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: My Checkout Action
+      - run: ls
